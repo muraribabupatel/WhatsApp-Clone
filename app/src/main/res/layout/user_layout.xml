@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/babu"
+           />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:padding="10dp"
+       android:layout_marginStart="10dp"
+       android:orientation="vertical"
+       android:layout_weight="1">
+
+       <TextView
+           android:id="@+id/name"
+           android:textColor="@color/black"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Babu"
+           android:textSize="18sp"
+           android:textStyle="bold" />
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/tick"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:layout_marginTop="3dp"
+               android:layout_alignParentStart="true"
+
+               android:src="@drawable/arowtick" />
+
+           <TextView
+               android:id="@+id/message"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#5C5C5C"
+               android:layout_marginStart="20dp"
+               android:text="Hii" />
+       </RelativeLayout>
+   </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:textColor="#4C4C4C"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="10:20 am"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
